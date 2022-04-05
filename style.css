@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&family=Roboto&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1280px;
+  height: 720px;
+
+  justify-content: space-evenly;
+
+  background: #121214;
+  border-radius: 12px;
+}
+
+.logo {
+  width: 229px;
+  height: 68px;
+}
+
+.home .zoom {
+  overflow: hidden;
+}
+
+.home figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-family: Roboto;
+}
+
+.home figure img {
+  width: 160px;
+  height: 160px;
+  border-radius: 18px;
+  transition: transform 2s;
+}
+.home figure figcaption {
+  color: #fff;
+  margin-top: 10px;
+}
+
+.home figure img:hover {
+  border-radius: 18px;
+  transform: scale(1.3);
+}
+
+.home h1 {
+  font-family: Roboto;
+  color: #fff;
+}
+
+.home section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 700px;
+}
+
+.profilemanager {
+  border: 1.5px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #0000;
+  height: 40px;
+  width: 240px;
+  margin-bottom: 60px;
+}
+
+.profilemanager:hover {
+  background-color: #fff;
+  color: #000;
+  border: thin #000 solid;
+}
+
+button:active {
+  transform: scale(1.05);
+
+  transition: transform 400ms;
+}
+
+.buttonAdd {
+  border-radius: 18px;
+  width: 160px;
+  height: 160px;
+  border: thin #fff solid;
+  background-color: transparent;
+}
+
+.buttonAdd:hover {
+  background-color: #c6c6c6;
+  color: #000;
+}
+
+.buttonEnter {
+  box-sizing: border-box;
+  background-color: transparent;
+  overflow: hidden;
+  border: transparent;
+  border-radius: 18px;
+}
+
+#plus {
+  height: 60px;
+  width: 60px;
+  color: #fff;
+}
