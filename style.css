@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Mono&family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   display: flex;
   flex-direction: column;
@@ -11,13 +16,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1280px;
-  height: 720px;
 
-  justify-content: space-evenly;
+  justify-content: space-between;
 
+  height: 100vh;
+  width: 100vw;
   background: #121214;
   border-radius: 12px;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 .logo {
@@ -34,7 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  font-family: Roboto;
+  margin: 10px;
 }
 
 .home figure img {
@@ -62,12 +68,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 700px;
 }
 
 .profilemanager {
   border: 1.5px solid #ffffff;
-  box-sizing: border-box;
   border-radius: 8px;
   color: #fff;
   background-color: #0000;
@@ -94,11 +98,12 @@ button:active {
   height: 160px;
   border: thin #fff solid;
   background-color: transparent;
+  opacity: 0.5;
 }
 
 .buttonAdd:hover {
-  background-color: #c6c6c6;
-  color: #000;
+  opacity: 1;
+  color: rgb(255, 255, 255);
 }
 
 .buttonEnter {
